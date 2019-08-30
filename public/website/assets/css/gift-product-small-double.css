@@ -1,0 +1,252 @@
+.gift {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  margin: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+
+.gift__img {
+  text-align: center;
+  padding: 25px;
+  border: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.gift__img img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+.product-item:hover .gift__img img {
+  transform: scale(.9);
+  opacity: .6;
+}
+
+.gift__img:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: rgba(233,199,105,0.5);
+  transition: all .5s cubic-bezier(0.52,1.64,.37,.66);
+  box-shadow: 0 5px 10px 0px rgba(0,0,0,0.1);
+}
+
+.gift__img:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: rgba(233,199,105,0.5);
+  transition: all .5s cubic-bezier(0.52,1.64,.37,.66);
+}
+
+.product-item:hover .gift__img:before {
+  height: 100%;
+}
+
+.product-item:hover .gift__img:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  margin: -64px -64px 0;
+  width: 128px;
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  content: 'pageview';
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 128px;
+  display: inline-block;
+  line-height: 128px;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.gift__info {
+  padding-top: 25px;
+}
+
+.gift__name {
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+  font-style: normal;
+  margin: 2px 0 10px 0;
+  color: #A38A47;
+  text-align: right;
+}
+
+.product-item.sm .gift__name {
+  font-size: 18px;
+  color: #666;
+}
+
+.gift__details {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 18px;
+  font-style: italic;
+}
+
+.gift__details p {
+  padding: 0;
+  margin-bottom: 3px;
+}
+
+.gift__bottom {
+  padding: 10px 0;
+}
+
+.gift__price-wrap {
+  color: #444444;
+  line-height: 18px;
+  font-size: 15px;
+}
+
+.gift__normal-price {
+  font-size: 15px;
+}
+
+.gift__normal-price .gift__data {
+  text-decoration: line-through;
+}
+
+.gift__today-price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.gift__today-price .gift__data {
+  color: #A38A47;
+  font-size: 20px;
+}
+
+.gift__today-price .gift__price {
+  color: #A38A47;
+  font-size: 30px;
+}
+
+.product-item.sm .gift__today-price .gift__price {
+  font-size: 18px;
+  color: #888;
+}
+
+.gift__quantity-left {
+  margin-top: 5px;
+}
+
+.gift__cta-wrap {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.gift__cta {
+  background-color: #E9C769;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #333;
+  font-weight: 700;
+  padding: 5px 15px 15px;
+  outline: none;
+  line-height: 18px;
+  transition: all 0.3s;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.1),0 0 0 1px #FFF,0 0 20px rgba(0,0,0,0.25), inset 0 0 20px rgba(0,0,0,0.25);
+}
+
+.product-item.sm .gift__cta {
+  padding: 1px 10px 10px;
+  font-size: 13px;
+  line-height: 15px;
+  background: #666;
+  color: #FFF;
+}
+
+.product-item.sm .gift__cta:hover {
+  background: #444;
+}
+
+.gift__cta .material-icons {
+  transform: translateY(5px);
+}
+
+.gift__cta:hover {
+  background: #555;
+  text-decoration: none;
+  color: #fff;
+}
+
+.gift__cta-note {
+  font-size: 13px;
+  color: #336f25;
+  padding-top: 5px;
+  display: block;
+}
+
+.gift__rating {
+  margin: 30px 0 0;
+  text-align: center;
+}
+
+.gift__rating i {
+  color: #E9C769;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.gift__rating-number {
+  font-size: 13px;
+  margin-right: 4px;
+  line-height: 15px;
+  vertical-align: text-top;
+  margin-bottom: 3px;
+}
+
+@media (min-width: 768px) {
+  .gift__img {
+    border: 0px solid #e2e2e2;
+  }
+}
+
+.no-border {
+  border: none !important;
+}
+
+.gift--double {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gift--double .gift__bottom {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .gift__cta {
+    font-size: 18px;
+  }
+}
+

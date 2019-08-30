@@ -1,0 +1,54 @@
+.filter select {
+  width: 17%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px #aaa;
+  margin: 0px 10px;
+  background: #eee;
+}
+
+@media (max-width: 575px) {
+  .filter select {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .filter .btn {
+    width: 40%;
+  }
+}
+
+.filter {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .filter {
+    text-align: center;
+  }
+}
+
+.filter input {
+  margin: 0px;
+  width: 50%;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 575px) {
+  .filter input {
+    margin: 5px 0 15px;
+    width: 100%;
+  }
+}
+
+* {
+  outline: none;
+}
+

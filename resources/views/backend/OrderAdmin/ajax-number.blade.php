@@ -1,0 +1,1 @@
+{{$StoreNumber->size_number}}
